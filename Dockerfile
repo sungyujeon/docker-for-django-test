@@ -8,4 +8,4 @@ ADD    ./toss           /app/toss/
 ADD    ./gunicorn       /app/gunicorn/
 ADD    ./manage.py      /app/
 
-CMD ["gunicorn", "djangosample.wsgi", "-c", "gunicorn/prod.py"]
+CMD ["gunicorn", "toss.wsgi", "-c", "gunicorn/prod.py"]
